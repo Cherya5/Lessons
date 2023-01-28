@@ -1,0 +1,50 @@
+@import url(reset.css);
+
+.text {
+	color: red;
+}
+
+#list {
+	color: aqua;
+}
+
+div.text {
+	color: green;
+}
+
+.lesson.text {
+	color: blue;
+}
+
+span {
+	color: orange;
+}
+
+.lesson_text,
+.young_text {
+	color: aquamarine;
+}
+
+.text ul {
+	color: olive;
+}
+
+.main_text p {
+	color: olive;
+}
+
+.main_info * {
+	color: beige;
+}
+
+.one_text>p {
+	color: darkmagenta;
+}
+
+.text~p {
+	color: lime;
+}
+
+.main_info+p {
+	color: orange;
+}
