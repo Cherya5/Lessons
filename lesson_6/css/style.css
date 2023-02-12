@@ -1,0 +1,105 @@
+@import url(reset.css);
+
+[class*="_container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.article {
+	margin-top: 80px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+
+.article_text {
+	max-width: 816px;
+	margin: 0 auto 80px;
+}
+
+.article_text p {
+	font-size: 14px;
+	line-height: 1.78;
+	margin-bottom: 30px;
+	color: #6c757d;
+	margin-top: 40px;
+}
+
+.title_text {
+	max-width: 625px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
+	margin-bottom: 40px;
+}
+
+.images_image_1,
+.images_image_5,
+.images_image_2 {
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.artilce_images {
+	max-width: 100%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+
+.images_image_6,
+.images_image_3 {
+	margin-right: 30px;
+}
+
+.test {
+	padding: 50px 30px;
+	margin: 0 auto;
+	border: 5px dotted olive;
+}
+
+.block_1 {
+	background-color: yellow;
+	margin-bottom: 30px;
+	border-top: 5px solid blue;
+	border-right: 4px dotted green;
+	border-bottom: 3px dashed red;
+	border-left: 2px solid brown;
+
+}
+
+.text_1 {
+	background-color: rgb(121, 121, 246);
+	outline: 8px solid yellow;
+	box-shadow: 8px 8px 8px 8px black;
+
+}
+
+.image_1 {
+	max-width: 605px;
+	margin-top: 30px;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+
+.button {
+	display: inline-block;
+	padding: 5px;
+	background-color: orange;
+	color: #e86e6e;
+	border-radius: 10px;
+	border: 5px solid rgb(87, 110, 87);
+	box-shadow: 0 7px 0 0 #000;
+	margin-bottom: 20px;
+	position: relative;
+	top: 0;
+	transition: all 0.3s;
+}
+
+.button:hover {
+	top: 4px;
+	box-shadow: 0 3px 0 0 #000;
+}
