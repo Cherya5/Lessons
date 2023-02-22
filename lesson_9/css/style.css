@@ -1,0 +1,76 @@
+@import url(reset.css);
+
+.block {
+	background: rgb(178, 174, 64);
+}
+
+.block2 {
+	background: rgb(17, 34, 5);
+}
+
+.block3 {
+	background: rgb(96, 96, 230);
+}
+
+h2 {
+	font-size: 50px;
+	line-height: 1.6;
+	color: azure;
+	margin-bottom: 50px;
+}
+
+p {
+	font-size: 30px;
+	line-height: 1.6;
+	color: aqua;
+	margin-bottom: 50px;
+}
+
+[class*="_container"] {
+	width: 1200px;
+	max-width: 100%;
+	padding: 30px 15px;
+	margin: 0 auto;
+}
+
+img {
+	display: inline-block;
+	margin: 15px 30px 15px 0px;
+	max-width: 100%;
+
+}
+
+.block3 img {
+	max-width: 500px;
+	max-height: 350px;
+	border-radius: 25px;
+}
+
+h2:first-letter {
+	text-transform: capitalize;
+
+}
+
+p:first-letter {
+	text-transform: capitalize;
+
+}
+
+h2:hover {
+	text-decoration: underline red;
+}
+
+.block3 img:hover {
+	border: 5px solid blue;
+}
+
+.block_container>* {
+	margin-bottom: 20px;
+}
+
+/*.block_container>*:last-child {
+	margin-bottom: 0;
+}*/
+[class*="_container"]>*:last-child {
+	margin-bottom: 0;
+}
