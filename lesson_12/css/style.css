@@ -1,0 +1,288 @@
+@import url(reset.css);
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header {}
+
+.header__container {}
+
+.header__title {
+	padding: 30px 10px;
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	background-color: #a09494;
+
+}
+
+.main {}
+
+.main__container {}
+
+.main__content {
+	padding: 50px;
+	background-color: #dad7d7;
+	margin: 0 auto;
+}
+
+.block {
+
+	background: #de7777;
+	display: inline-block;
+}
+
+.block:not(:last-child) {
+	margin-bottom: 30px;
+	margin-right: 100px;
+}
+
+p {
+	display: block;
+	text-align: center;
+}
+
+.block__item {
+	padding: 100px 0;
+	font-size: 40px;
+	font-weight: 800;
+	border: 2px solid black;
+	width: 250px;
+	height: 250px;
+	background-color: olive;
+	letter-spacing: 3px;
+}
+
+.translate:hover {
+	transform: translate(20px, 30px);
+}
+
+.block__text {}
+
+.text {}
+
+.scale:hover {
+	transform: scale(0.5);
+}
+
+.rotate:hover {
+	transform: rotate(-130deg);
+}
+
+.skew:hover {
+	transform: skew(25deg, 35deg);
+}
+
+.matrix :hover {
+	transform: matrix(4, 2, 5, 5, 5, 5);
+}
+
+.multi:hover {
+	transform: translate(50px, 35px) scale(1.5) rotate(135deg);
+}
+
+.origin {
+	transform-origin: 0px 0px;
+}
+
+.origin:hover {
+	transform: rotate(35deg);
+
+}
+
+.block_pers {
+	perspective-origin: center;
+	perspective: 300px;
+
+}
+
+.perspective {}
+
+.perspective:hover {
+	transform: rotateX(50deg);
+}
+
+.rotate3d:hover {
+	transform: rotate3d(3, 3, 3, 55deg);
+}
+
+.block_trans {
+	perspective: 200px;
+	transform-style: preserve-3d;
+}
+
+
+
+.transform:hover {
+	transform: rotateX(45deg);
+}
+
+.car {
+	padding: 200px 0px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.car__road {
+	position: absolute;
+	top: 350px;
+	left: 0px;
+	background-color: grey;
+	width: 100%;
+	height: 300px;
+	border-radius: 25px;
+}
+
+.car__body {
+	max-width: 800px;
+	height: 300px;
+	/*background-color: rgb(245, 245, 125);
+	border: 2px solid rgb(9, 9, 9);*/
+	position: relative;
+	top: 0px;
+	left: 300px;
+
+}
+
+.car__wheels {}
+
+.car__front-wheel {
+	width: 100px;
+	height: 100px;
+	background: rgb(23, 22, 22);
+	border-radius: 50%;
+	position: absolute;
+	top: 247px;
+	left: 80px;
+	border: 15px dashed rgb(159, 156, 156);
+	z-index: 20
+}
+
+.car__back-wheel {
+	width: 100px;
+	height: 100px;
+	background: rgb(23, 22, 22);
+	border-radius: 50%;
+	position: absolute;
+	top: 247px;
+	left: 600px;
+	border: 15px dashed rgb(159, 156, 156);
+	z-index: 20;
+}
+
+.car__back-wheel:hover {
+	transform: rotate(90deg);
+}
+
+.car__front-wheel:hover {
+	transform: rotate(90deg);
+}
+
+.car__cabine {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 275px;
+	height: 300px;
+	background-color: blue;
+	border: 5px solid black;
+	border-radius: 200px 30px 10px 45px;
+	z-index: 18;
+}
+
+.car__door-window {
+	width: 140px;
+	height: 90px;
+	position: absolute;
+	top: 40px;
+	left: 80px;
+	border: 5px solid black;
+	border-radius: 200px 30px 10px 10px;
+	background-color: #1b1a1a;
+}
+
+.car__door {
+	width: 140px;
+	height: 90px;
+	position: absolute;
+	top: 128px;
+	left: 80px;
+	border: 3px solid black;
+	border-top: 1px solid black;
+	border-radius: 0px 0px 10px 0px;
+}
+
+.car__door-handler {
+	position: absolute;
+	top: 140px;
+	left: 180px;
+	width: 25px;
+	height: 15px;
+	background-color: black;
+}
+
+.car__glass-front {
+	position: absolute;
+	top: 200px;
+	left: -5px;
+	width: 20px;
+	height: 45px;
+	background-color: yellow;
+	border-radius: 40px 25px 20px 20px;
+	border: 3px solid black;
+}
+
+.car__glass-front:hover {
+	box-shadow: -10px -2px 20px 20px yellow;
+}
+
+.car__footboard {
+	position: absolute;
+	top: 270px;
+	left: 180px;
+	width: 30px;
+	height: 15px;
+	background-color: black;
+	border-radius: 30px 30px 10px 10px;
+}
+
+.car__carcass {
+	position: absolute;
+	top: 0px;
+	left: 272px;
+	width: 500px;
+	height: 300px;
+	background-color: rgb(246, 246, 6);
+	border-radius: 30px 30px 10px 10px;
+	border: 7px solid black;
+}
+
+.carcass__text {
+	font-size: 100px;
+	font-weight: 700;
+	color: blue;
+	text-align: center;
+}
+
+.car__glass-back {
+	position: absolute;
+	top: 200px;
+	left: 470px;
+	width: 20px;
+	height: 45px;
+	background-color: red;
+	border-radius: 25px 25px 20px 20px;
+	border: 3px solid black;
+}
+
+.car__glass-back:hover {
+	box-shadow: -1px -4px 10px 10px red;
+}
