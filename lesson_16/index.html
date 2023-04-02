@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,regular,500,600,700,800,900&display=swap"
+		rel="stylesheet" rel="stylesheet" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main class="main-page">
+			<div class="main-page__container">
+				<div class="main-page__block main-block">
+					<div class="main-block__title title">Shipping Address</div>
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data"
+						class="main-block__input login-box">
+						<div class="login-box__email-box">
+							<label for="input-email">Email Address <span class="red-star">*</span></label>
+							<input id="input-email" type="email" name="email" value="roni_cost@example.com" required>
+						</div>
+						<div class="login-box__password-box">
+							<label for="input-password">Password</label>
+							<input id="input-password" type="password" name="password" value="**************" required>
+						</div>
+						<div class="login-box__zip-box">
+							<label for="input-zip-box">Zip/Postal Code</label>
+							<input id="input-zip-box" type="password" name="password" value="">
+						</div>
+						<div class="login-box__text">
+							<p>You already have an account with us. Sign in or continue as guest.</p>
+						</div>
+						<div class="login-box__buttons button">
+							<button class="button__black" type="submit">Login</button>
+							<button class="button__button-fogot-password" type="button">Forgot your password ?</button>
+						</div>
+					</form>
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data"
+						class="main-block__personality personality">
+						<div class="personality__registr-box">
+							<div class="personality__first-name">
+								<label for="first-name">first-name<span class="red-star"></span></label>
+								<input id="first-name" type="text" name="first-name" reguired>
+							</div>
+							<div class="personality__first-name">
+								<label for="last name">last name<span class="red-star">*</span></label>
+								<input id="last name" type="text" name="last name" reguired>
+							</div>
+							<div class="personality__company">
+								<label for="company">company<span class="red-star">*</span></label>
+								<input id="company" type="text" name="company" reguired>
+							</div>
+							<div class="personality__address">
+								<label for="address">address <span class="red-star">*</span></label>
+								<input id="address" type="text" name="address" reguired>
+							</div>
+							<div class="personality__country">
+								<label for="country">country<span class="red-star">*</span></label>
+								<input id="country" type="text" name="country" reguired>
+							</div>
+							<div class="personality__state">
+								<label for="state">State/Province<span class="red-star">*</span></label>
+								<input id="state" type="text" name="state" reguired>
+							</div>
+						</div>
+						<div class="main-block__shipping shipping">
+							<div class="shipping__title title">Shipping Methods</div>
+							<div class="shipping__box-type box-type">
+								<div class="box-type__radio-one">
+									<input checked class="box-type__input" id="radio-1" reguired value="5$" name="price"
+										type="radio">
+									<label class="box-type__label" for="radio-1">$5.00</label>
+									<div class="box-type__info">
+										<div class="box-type__label-text">Fixed</div>
+										<div class="box-type__label-text">Flat-Rat</div>
+									</div>
+
+								</div>
+								<div class="box-type__radio-two">
+									<input checked class="box-type__input" id="radio-2" reguired value="5$" name="price"
+										type="radio">
+									<label class="box-type__label" for="radio-2">$10.00</label>
+									<div class="box-type__info">
+										<div class="box-type__label-text">Table Rate</div>
+										<div class="box-type__label-text">Best Way</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="shipping__next">
+								<button class="shipping__button" type="submit">next</button>
+								<a href="#" class="shipping__back">back</a>
+							</div>
+						</div>
+					</form>
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data"
+						class="main-block__billing billing">
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="billing__form">
+							<div class="billing__title">Billing Details</div>
+							<div class="billing__items">
+								<div class="billing__item">
+									<input class="billing__input" required type="text" name="username" placeholder="First Name*">
+									<input class="billing__input" required type="text" name="userlastname"
+										placeholder="last Name*">
+								</div>
+								<div class="billing__item">
+									<input class="billing__input" required type="text" name="address" placeholder="Address*">
+									<input class="billing__input" required type="text" name="Addressline2"
+										placeholder="Address Line 2">
+								</div>
+								<div class="billing__item select-item">
+									<select class="billing__input select-country" name="country" id="country">
+										<option value="country*" selected disabled>Country</option>
+										<option value="Italy">Italy</option>
+										<option value="England">England</option>
+										<option value="Norway">Norway</option>
+										<option value="Ukraine*">Ukraine</option>
+										<option value="USA">USA</option>
+									</select>
+									<input type="text" name="usercity" class="billing__input" placeholder="City/Town">
+								</div>
+								<div class="billing__item">
+									<input class="billing__input" required type="text" name="postcode"
+										placeholder="Postcode/ZIP*">
+									<input class="billing__input" required type="tel" name="phone*" placeholder="Phone">
+								</div>
+								<div class="billing__item">
+									<input class="billing__input" required type="text" name="postcode"
+										placeholder="Postcode/ZIP*">
+									<input class="billing__input" required type="tel" name="phone*" placeholder="Phone">
+								</div>
+								<div class="billing__item">
+									<textarea class="billing__input item-textarea" name="additional"
+										placeholder="Additional information"></textarea>
+								</div>
+							</div>
+							<div class="billing__checkbox checkbox-billing">
+								<div class="checkbox-billing__item">
+									<input name="creat-account" id="creat-account" checked class="checkbox-billing__check"
+										value="yes" type="checkbox">
+									<label class="checkbox-billing__label" for="creat-account">Creat Account</label>
+								</div>
+								<div class="checkbox-billing__item">
+									<input id="ship" name="ship" checked class="checkbox-billing__check" value="yes"
+										type="checkbox">
+									<label class="checkbox-billing__label" for="ship">Ship to a different address?</label>
+								</div>
+							</div>
+							<div class="billing__coupon">
+								<div class="billing__title title-coupon">Apply Coupon to get discount</div>
+								<div class="billing__item coupon-item">
+									<input class="billing__input" required type="text" name="coupon" placeholder="Coupon code">
+									<button class="billing__apply" type="submit">Apply Code</button>
+								</div>
+							</div>
+						</form>
+					</form>
+				</div>
+
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+
+</body>
+
+
+</html>
